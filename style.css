@@ -1,25 +1,24 @@
 .title {
     height: 100px;
-    background-color: green;
+    background-color: rgb(19, 34, 72);
     margin: 0px;
     font-size: 38px;
-    color: black;
+    color: rgb(227, 212, 212);
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-
-
-
 }
+
+
 
 
 .searchButton {
 
     height: 50px;
-    background-color: yellow;
+    background-color: rgb(227, 212, 212);
 
 
     font-size: 25px;
@@ -33,26 +32,37 @@
 }
 
 
-.searchButton>button {
-    color: white;
-    width: 45px;
-    height: 30px;
-    background-color: black;
+.sWord {
+    margin: 5px;
+   
 }
 
-.searchButton>input {
-    height: 24px;
+
+#search-button {
+    color: white;
+    width: 45px;
+    height: 29px;
+    background-color: black;
+    border-radius: 3px;
+}
+
+
+#search-input{
+    height: 25px;
     background-color: transparent;
     color: black;
     border: 1px solid black;
-    border-radius: 2px;
+    border-radius: 3px;
+    margin-right: 1px;
+
 }
+
 
 
 
 .arrangeCard {
-    background-color: black;
-    width: 1100px;
+
+    width: 1300px;
 
     margin: 50px auto 0px auto;
 
@@ -60,9 +70,8 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap:16px;
-
-
+    gap: 40px;
+    row-gap: 50px;
 
 }
 
@@ -70,20 +79,16 @@
 .card {
 
     width: 250px;
-    height: 500px;
-    background-color: green;
+    height: 600px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    background-color: rgb(153, 183, 69);
+    
     border: 1px solid #ebeaec;
     border-radius: 16px;
-    justify-content: space-around
+    overflow: hidden;
 }
 
-.cardText {
+/* .cardText {
     width: 220px;
 
     Display: flex;
@@ -91,10 +96,68 @@
     Align-items: center;
     justify-content: center;
     border: 1px transparent;
+    dom이 만들어지고 없어져도 됨
+
+} */
+
+.card-image {
+    width: 250px;
+    height: 350px;
+
+}
+
+
+.container {
+   
+    padding: 20px 20px 20px 20px;
+
+}
+
+
+.theme {
+    font-size: 18px;
+    margin: 0px;
+    min-height: 50px;
+
+}
+
+
+.contents {
+    font-size: 15px;
+    margin: 0px;
+    max-height: 125px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+
+
+  
+.contents ::-webkit-scrollbar {
+        display: none; /* Chrome */
+    }
+
+
+    
+
+
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; 이거는 3줄까지 자르고 줄임표시...가 들어가는 방식*/
 
 
 }
 
-.card-image {
-width: 220px;
+
+.rate {
+    font-size: 12px;
+    display: block;
+    margin-top: 20px;
+   
+    /* margin-top: 20; ,  height: 100px; 이거 둘다 왜 작동을 안할까?- rate의 디스플레이가 inline으로 설정되어있어서*/
+   
+   
+
+
 }
